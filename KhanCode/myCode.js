@@ -4,6 +4,9 @@ size(400, 400);
 frameRate(30);
 
 
+
+//Replace blow code to Khan Academy code in order to run offlince
+
 background(100,100,100);
 fill(255,255,255);
 
@@ -19,5 +22,6 @@ fill(0,0,0);
 textSize(30);
 text("Hello World!",73,73);
 
+//Stop Here 
 
 		}};
