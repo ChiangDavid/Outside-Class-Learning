@@ -21,11 +21,12 @@ public class selectionSort {
 		
 		// Loop over items starting with startIndex, 
 	    // updating minValue and minIndex as needed:
-		for (int i = minIndex + 1; i < a.length; i++) {
+		for (int i = minIndex + 1; i < a.length ; i++) {
 			if (a[i] < minValue) {
 				minValue = a[i];
-            	minIndex = i;
+				minIndex = i;
     			//To check and make sure we do the right thing for if statement
+            	//System.out.println();
             	//System.out.println("Value for that index is : " + a[i]);
     			//System.out.println("Index for that Value is : " + minIndex);
 			}
@@ -38,7 +39,7 @@ public class selectionSort {
 	
 	public static void selectionSorting(int[] a) {
 		//loop through the array
-		for (int i = 0; i < a.length; i++){
+		for (int i = 0; i < a.length-1; i++){
 			//Create the variable call minNumIndex that store the index of smallest number
 			int minNumIndex = indexOfMinimum(a,i);
 			//Use swap function to swap the elements in the array
@@ -48,7 +49,7 @@ public class selectionSort {
 	
 	
 	public static void main(String[] args) {
-		int[] array = {22, 11, 99, 88, 9, 7, 42};
+		int[] array = {22, 11, 99, 30,88, 9, 7, 42,55};
 		System.out.println("Array Before Sorting:");
 		for (int i = 0; i < array.length; i++){
 			System.out.print("{ " + array[i] + " }");
